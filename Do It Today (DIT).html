@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://warm-concha-a5e000.netlify.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=4dea0d6e-1721-42ad-9364-aeea1f2f942d
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Do It Today (DIT)</title>
+  <script src="./Do It Today (DIT)_files/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Do It Today (DIT)_files/css2" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+    }
+    .status-btn {
+      transition: all 0.16s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .status-btn:active {
+      transform: scale(0.92);
+    }
+    .plus-btn {
+      transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .plus-btn:hover {
+      transform: scale(1.06);
+    }
+    .plus-btn:active {
+      transform: scale(0.95);
+    }
+    .pin-dot {
+      transition: all 0.2s ease;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+    .shake {
+      animation: shake 0.35s ease-in-out;
+    }
+    input[type="time"]::-webkit-calendar-picker-indicator {
+      filter: invert(0.8);
+      cursor: pointer;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.4);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(100, 116, 139, 0.4);
+      border-radius: 9999px;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.sticky{position:sticky}.inset-0{inset:0px}.bottom-4{bottom:1rem}.right-4{right:1rem}.top-0{top:0px}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-14{height:3.5rem}.h-2{height:0.5rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-9{height:2.25rem}.max-h-72{max-height:18rem}.max-h-\[90vh\]{max-height:90vh}.min-h-screen{min-height:100vh}.w-14{width:3.5rem}.w-2{width:0.5rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.max-w-xs{max-width:20rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-y-auto{overflow-y:auto}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-indigo-400\/40{border-color:rgb(129 140 248 / 0.4)}.border-indigo-500\/30{border-color:rgb(99 102 241 / 0.3)}.border-indigo-500\/40{border-color:rgb(99 102 241 / 0.4)}.border-rose-500\/30{border-color:rgb(244 63 94 / 0.3)}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-700\/70{border-color:rgb(51 65 85 / 0.7)}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-indigo-600\/20{background-color:rgb(79 70 229 / 0.2)}.bg-rose-500\/15{background-color:rgb(244 63 94 / 0.15)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-800\/90{background-color:rgb(30 41 59 / 0.9)}.bg-slate-900\/60{background-color:rgb(15 23 42 / 0.6)}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-slate-900\/90{background-color:rgb(15 23 42 / 0.9)}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-slate-950\/80{background-color:rgb(2 6 23 / 0.8)}.bg-slate-950\/90{background-color:rgb(2 6 23 / 0.9)}.bg-transparent{background-color:transparent}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-3{padding-bottom:0.75rem}.pr-1{padding-right:0.25rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-indigo-300{--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.placeholder-slate-500::placeholder{--tw-placeholder-opacity:1;color:rgb(100 116 139 / var(--tw-placeholder-opacity, 1))}.opacity-0{opacity:0}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-indigo-500\/20{--tw-shadow-color:rgb(99 102 241 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-indigo-600\/30{--tw-shadow-color:rgb(79 70 229 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-indigo-500 *::selection{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-indigo-500::selection{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-500:hover{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-500\/10:hover{background-color:rgb(244 63 94 / 0.1)}.hover\:bg-rose-500\/25:hover{background-color:rgb(244 63 94 / 0.25)}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-emerald-500:focus{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.focus\:border-indigo-500:focus{--tw-border-opacity:1;border-color:rgb(99 102 241 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.active\:bg-indigo-600:active{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:p-8{padding:2rem}.sm\:px-0{padding-left:0px;padding-right:0px}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}</style></head>
+<body class="min-h-screen selection:bg-indigo-500 selection:text-white">
+
+  <!-- TOAST CONTAINER -->
+  <div id="toastContainer" class="fixed bottom-4 right-4 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+  <!-- PIN LOCK SCREEN -->
+  <div id="lockScreen" class="fixed inset-0 z-40 bg-slate-950 flex flex-col items-center justify-center p-4">
+    <div class="w-full max-w-xs glass-card rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-800 text-center">
+      <div class="w-14 h-14 rounded-2xl bg-indigo-600/20 border border-indigo-500/40 flex items-center justify-center mx-auto mb-4">
+        <svg class="w-7 h-7 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+        </svg>
+      </div>
+      <h1 class="text-2xl font-extrabold tracking-tight text-white">Do It Today</h1>
+      <p class="text-xs text-slate-400 mt-1 mb-6">Enter your 4-digit PIN</p>
+
+      <div id="pinDotsContainer" class="flex justify-center gap-4 mb-6">
+        <div id="pinDot0" class="pin-dot w-4 h-4 rounded-full border-2 border-slate-600 bg-transparent"></div>
+        <div id="pinDot1" class="pin-dot w-4 h-4 rounded-full border-2 border-slate-600 bg-transparent"></div>
+        <div id="pinDot2" class="pin-dot w-4 h-4 rounded-full border-2 border-slate-600 bg-transparent"></div>
+        <div id="pinDot3" class="pin-dot w-4 h-4 rounded-full border-2 border-slate-600 bg-transparent"></div>
+      </div>
+
+      <p id="pinErrorMsg" class="text-xs text-rose-400 font-medium h-4 mb-3 opacity-0 transition-opacity">Incorrect PIN</p>
+
+      <div class="grid grid-cols-3 gap-3">
+        <button type="button" onclick="pressPinDigit('1')" class="h-14 rounded-2xl bg-slate-800/90 hover:bg-slate-700 active:bg-indigo-600 text-lg font-bold text-white transition border border-slate-700/70">1</button>
+        <button type="button" onclick="pressPinDigit('2')" class="h-14 rounded-2xl bg-slate-800/90 hover:bg-slate-700 active:bg-indigo-600 text-lg font-bold text-white transition border border-slate-700/70">2</button>
+        <button type="button" onclick="pressPinDigit('3')" class="h-14 rounded-2xl bg-slate-800/90 hover:bg-slate-700 active:bg-indigo-600 text-lg font-bold text-white transition border border-slate-700/70">3</button>
+        <button type="button" onclick="pressPinDigit('4')" class="h-14 rounded-2xl bg-slate-800/90 hover:bg-slate-700 active:bg-indigo-600 text-lg font-bold text-white transition border border-slate-700/70">4</button>
+        <button type="button" onclick="pressPinDigit('5')" class="h-14 rounded-2xl bg-slate-800/90 hover:bg-slate-700 active:bg-indigo-600 text-lg font-bold text-white transition border border-slate-700/70">5</button>
+        <button type="button" onclick="pressPinDigit('6')" class="h-14 rounded-2xl bg-slate-800/90 hover:bg-slate-700 active:bg-indigo-600 text-lg font-bold text-white transition border border-slate-700/70">6</button>
+        <button type="button" onclick="pressPinDigit('7')" class="h-14 rounded-2xl bg-slate-800/90 hover:bg-slate-700 active:bg-indigo-600 text-lg font-bold text-white transition border border-slate-700/70">7</button>
+        <button type="button" onclick="pressPinDigit('8')" class="h-14 rounded-2xl bg-slate-800/90 hover:bg-slate-700 active:bg-indigo-600 text-lg font-bold text-white transition border border-slate-700/70">8</button>
+        <button type="button" onclick="pressPinDigit('9')" class="h-14 rounded-2xl bg-slate-800/90 hover:bg-slate-700 active:bg-indigo-600 text-lg font-bold text-white transition border border-slate-700/70">9</button>
+        <button type="button" onclick="clearPinInput()" class="h-14 rounded-2xl bg-slate-900/80 hover:bg-slate-800 text-xs font-semibold text-slate-400 transition border border-slate-800">CLEAR</button>
+        <button type="button" onclick="pressPinDigit('0')" class="h-14 rounded-2xl bg-slate-800/90 hover:bg-slate-700 active:bg-indigo-600 text-lg font-bold text-white transition border border-slate-700/70">0</button>
+        <button type="button" onclick="backspacePinDigit()" class="h-14 rounded-2xl bg-slate-900/80 hover:bg-slate-800 flex items-center justify-center text-slate-300 transition border border-slate-800" aria-label="Backspace">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div id="defaultPinHint" class="mt-5 pt-4 border-t border-slate-800/80 text-xs text-slate-400" style="display: block;">
+        Default PIN: <span class="font-mono font-bold text-indigo-300">1234</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN INTERFACE -->
+  <div id="appContainer" class="hidden min-h-screen flex flex-col">
+    <!-- Minimal Header -->
+    <header class="sticky top-0 z-30 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 px-4 py-3.5 sm:px-6">
+      <div class="max-w-4xl mx-auto flex items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center font-extrabold text-white text-xs tracking-wider shadow-md shadow-indigo-500/20">
+            DIT
+          </div>
+          <h1 class="text-lg sm:text-xl font-extrabold text-white tracking-tight">Do It Today</h1>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- Simulate 12:00 AM Rollover (For quick testing) -->
+          <button type="button" onclick="simulateMidnightRollover()" class="px-2.5 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-300 border border-slate-700 text-xs font-medium transition" title="Test 12:00 AM Rollover">
+            12:00 AM ↻
+          </button>
+
+          <!-- Sync Button -->
+          <button type="button" onclick="openSyncModal()" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-medium transition" title="Phone &amp; Laptop Sync">
+            <span id="syncDot" class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span class="hidden sm:inline" id="syncStatusText">Sync</span>
+          </button>
+
+          <!-- Change PIN -->
+          <button type="button" onclick="openPinModal()" class="p-2 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-300 border border-slate-700 transition" title="Change PIN">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
+            </svg>
+          </button>
+
+          <!-- Lock -->
+          <button type="button" onclick="lockApp()" class="p-2 rounded-xl bg-rose-500/15 hover:bg-rose-500/25 text-rose-300 border border-rose-500/30 transition" title="Lock">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Single Main Workspace -->
+    <main class="flex-1 max-w-4xl w-full mx-auto px-4 py-8 sm:px-6 flex flex-col items-center">
+      <!-- Tasks Container -->
+      <div id="rowsContainer" class="w-full space-y-4"></div>
+
+      <!-- The Bottom '+' Icon (Only thing visible initially, and sits below the last task row) -->
+      <div id="bottomPlusContainer" class="mt-6 flex flex-col items-center justify-center">
+        <button type="button" onclick="addNewTaskRow()" class="plus-btn w-14 h-14 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white shadow-xl shadow-indigo-600/30 border border-indigo-400/40 flex items-center justify-center text-3xl font-light" title="Add Task Row" aria-label="Add Task Row">
+          +
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <!-- RIGHT-SIDE '+' MODAL: UPCOMING TASKS LIST FOR A SPECIFIC TIMING ROW -->
+  <div id="upcomingModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="w-full max-w-md glass-card rounded-3xl p-6 border border-slate-700 shadow-2xl">
+      <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-800">
+        <div>
+          <h3 class="text-base font-bold text-white">Upcoming Tasks</h3>
+          <p id="upcomingModalSubtitle" class="text-xs text-indigo-300 font-mono mt-0.5"></p>
+        </div>
+        <button type="button" onclick="closeUpcomingModal()" class="w-8 h-8 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center">✕</button>
+      </div>
+
+      <!-- Add New Upcoming Task to this Timing -->
+      <form onsubmit="handleAddUpcomingForRow(event)" class="flex gap-2 mb-4">
+        <input id="newUpcomingInput" type="text" required="" placeholder="Add upcoming task for this timing..." class="flex-1 px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500">
+        <button type="submit" class="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm transition shrink-0">
+          + Add
+        </button>
+      </form>
+
+      <!-- Stored Upcoming Tasks List for this Timing -->
+      <div id="upcomingModalList" class="space-y-2 max-h-72 overflow-y-auto pr-1"></div>
+    </div>
+  </div>
+
+  <!-- CHANGE PIN MODAL -->
+  <div id="pinModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="w-full max-w-sm glass-card rounded-3xl p-6 border border-slate-700 shadow-2xl">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-base font-bold text-white">Change PIN</h3>
+        <button type="button" onclick="closePinModal()" class="text-slate-400 hover:text-white">✕</button>
+      </div>
+      <form onsubmit="handleSaveNewPin(event)" class="space-y-3.5">
+        <div>
+          <label for="currentPinInput" class="block text-xs font-medium text-slate-300 mb-1">Current 4-Digit PIN</label>
+          <input id="currentPinInput" type="password" inputmode="numeric" maxlength="4" pattern="\d{4}" required="" placeholder="••••" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-center tracking-widest font-mono text-base text-white">
+        </div>
+        <div>
+          <label for="newPinInput" class="block text-xs font-medium text-slate-300 mb-1">New 4-Digit PIN</label>
+          <input id="newPinInput" type="password" inputmode="numeric" maxlength="4" pattern="\d{4}" required="" placeholder="••••" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-center tracking-widest font-mono text-base text-white">
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closePinModal()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700">Cancel</button>
+          <button type="submit" class="px-4 py-2 rounded-xl text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white">Update PIN</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- PHONE <-> LAPTOP SYNC MODAL -->
+  <div id="syncModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="w-full max-w-lg glass-card rounded-3xl p-6 border border-slate-700 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-base font-bold text-white">Phone ↔ Laptop Sync</h3>
+        <button type="button" onclick="closeSyncModal()" class="text-slate-400 hover:text-white">✕</button>
+      </div>
+
+      <p class="text-xs text-slate-300 leading-relaxed mb-4">
+        Paste a Firebase Realtime Database URL (ending in <code class="text-indigo-300">/dit.json</code>) on both your phone and laptop so your rows, timings, ✅/❌ statuses, and upcoming lists stay identical everywhere.
+      </p>
+
+      <form onsubmit="saveCloudSyncConfig(event)" class="space-y-3 mb-5 p-4 rounded-2xl bg-slate-900/90 border border-slate-800">
+        <div>
+          <input id="cloudSyncUrlInput" type="url" placeholder="https://your-project-default-rtdb.firebaseio.com/dit.json" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-xs text-white font-mono placeholder-slate-500 focus:outline-none focus:border-emerald-500">
+        </div>
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+          <div class="flex items-center gap-2">
+            <button type="button" onclick="pullFromCloudNow()" class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700">↓ Pull</button>
+            <button type="button" onclick="pushToCloudNow()" class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700">↑ Push</button>
+          </div>
+          <div class="flex items-center gap-2">
+            <button type="button" onclick="disconnectCloudSync()" class="px-3 py-1.5 rounded-xl text-xs font-semibold text-rose-300 hover:bg-rose-500/10">Disconnect</button>
+            <button type="submit" class="px-4 py-1.5 rounded-xl text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white">Save Sync URL</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2.5">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-300">Instant Copy/Paste Code</span>
+          <button type="button" onclick="copySyncSnapshot()" class="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-indigo-600/20 text-indigo-300 border border-indigo-500/30">Copy Code</button>
+        </div>
+        <div class="flex gap-2">
+          <input id="importSnapshotInput" type="text" placeholder="Paste code from other device..." class="flex-1 px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-700 text-xs text-white font-mono">
+          <button type="button" onclick="importSyncSnapshot()" class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-white border border-slate-700">Load</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var STORAGE_KEY = 'dit_minimal_state_v2';
+    var SYNC_URL_KEY = 'dit_cloud_sync_url_v1';
+
+    function getTodayDateString() {
+      var now = new Date();
+      var y = now.getFullYear();
+      var m = String(now.getMonth() + 1).padStart(2, '0');
+      var d = String(now.getDate()).padStart(2, '0');
+      return y + '-' + m + '-' + d;
+    }
+
+    // Initially empty rows: interface starts with ONLY ONE '+' icon!
+    var defaultState = {
+      pin: '1234',
+      pinChanged: false,
+      lastActiveDate: getTodayDateString(),
+      updatedAt: Date.now(),
+      rows: [] // Each row: { id, startTime, endTime, task, status ('pending'|'done'|'failed'), upcoming: ['task A', 'task B'] }
+    };
+
+    var appState = loadLocalState();
+    var enteredPin = '';
+    var isUnlocked = false;
+    var activeUpcomingRowId = null;
+    var cloudSyncUrl = loadCloudSyncUrl();
+    var syncPollTimer = null;
+
+    function loadLocalState() {
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          var parsed = JSON.parse(raw);
+          if (parsed && Array.isArray(parsed.rows)) {
+            return parsed;
+          }
+        }
+      } catch (e) {}
+      return JSON.parse(JSON.stringify(defaultState));
+    }
+
+    function saveState(skipCloudPush) {
+      appState.updatedAt = Date.now();
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+      } catch (e) {}
+      if (!skipCloudPush && cloudSyncUrl) {
+        pushStateToCloud(false);
+      }
+    }
+
+    function loadCloudSyncUrl() {
+      try {
+        return localStorage.getItem(SYNC_URL_KEY) || '';
+      } catch (e) {
+        return '';
+      }
+    }
+
+    function saveCloudSyncUrlToStorage(url) {
+      cloudSyncUrl = url;
+      try {
+        if (url) localStorage.setItem(SYNC_URL_KEY, url);
+        else localStorage.removeItem(SYNC_URL_KEY);
+      } catch (e) {}
+      updateSyncBadge();
+    }
+
+    function showToast(message, type) {
+      var container = document.getElementById('toastContainer');
+      if (!container) return;
+      var toast = document.createElement('div');
+      var bgClass = 'bg-slate-900 border-slate-700 text-white';
+      if (type === 'success') bgClass = 'bg-emerald-950/95 border-emerald-500/40 text-emerald-200';
+      if (type === 'warn') bgClass = 'bg-amber-950/95 border-amber-500/40 text-amber-200';
+      if (type === 'error') bgClass = 'bg-rose-950/95 border-rose-500/40 text-rose-200';
+
+      toast.className = 'pointer-events-auto px-4 py-2.5 rounded-2xl border shadow-xl text-xs font-semibold flex items-center justify-between gap-3 transition-all duration-300 ' + bgClass;
+      toast.textContent = message;
+      container.appendChild(toast);
+
+      setTimeout(function() {
+        toast.style.opacity = '0';
+        setTimeout(function() {
+          if (toast.parentNode) toast.parentNode.removeChild(toast);
+        }, 250);
+      }, 2400);
+    }
+
+    function escapeHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function formatTime12h(time24) {
+      if (!time24 || time24.indexOf(':') === -1) return '--:--';
+      var parts = time24.split(':');
+      var h = parseInt(parts[0], 10);
+      var m = parts[1];
+      if (isNaN(h)) return time24;
+      var ampm = h >= 12 ? 'PM' : 'AM';
+      var h12 = h % 12;
+      if (h12 === 0) h12 = 12;
+      return String(h12).padStart(2, '0') + ':' + m + ' ' + ampm;
+    }
+
+    // --- PIN LOCK ---
+    function updatePinDots() {
+      for (var i = 0; i < 4; i++) {
+        var dot = document.getElementById('pinDot' + i);
+        if (!dot) continue;
+        if (i < enteredPin.length) {
+          dot.className = 'pin-dot w-4 h-4 rounded-full border-2 border-indigo-400 bg-indigo-400 scale-110';
+        } else {
+          dot.className = 'pin-dot w-4 h-4 rounded-full border-2 border-slate-600 bg-transparent';
+        }
+      }
+      var hint = document.getElementById('defaultPinHint');
+      if (hint) hint.style.display = appState.pinChanged ? 'none' : 'block';
+    }
+
+    function pressPinDigit(digit) {
+      if (isUnlocked) return;
+      var err = document.getElementById('pinErrorMsg');
+      if (err) err.style.opacity = '0';
+      if (enteredPin.length < 4) {
+        enteredPin += digit;
+        updatePinDots();
+      }
+      if (enteredPin.length === 4) {
+        setTimeout(verifyPinEntry, 100);
+      }
+    }
+
+    function backspacePinDigit() {
+      if (enteredPin.length > 0) {
+        enteredPin = enteredPin.slice(0, -1);
+        updatePinDots();
+      }
+    }
+
+    function clearPinInput() {
+      enteredPin = '';
+      updatePinDots();
+    }
+
+    function verifyPinEntry() {
+      var expectedPin = String(appState.pin || '1234');
+      if (enteredPin === expectedPin) {
+        isUnlocked = true;
+        enteredPin = '';
+        updatePinDots();
+        document.getElementById('lockScreen').classList.add('hidden');
+        document.getElementById('appContainer').classList.remove('hidden');
+        checkMidnightAutoRollover();
+        renderRows();
+      } else {
+        var dotsBox = document.getElementById('pinDotsContainer');
+        var err = document.getElementById('pinErrorMsg');
+        if (err) err.style.opacity = '1';
+        if (dotsBox) {
+          dotsBox.classList.remove('shake');
+          void dotsBox.offsetWidth;
+          dotsBox.classList.add('shake');
+        }
+        enteredPin = '';
+        updatePinDots();
+      }
+    }
+
+    function lockApp() {
+      isUnlocked = false;
+      enteredPin = '';
+      updatePinDots();
+      document.getElementById('appContainer').classList.add('hidden');
+      document.getElementById('lockScreen').classList.remove('hidden');
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if (!isUnlocked) {
+        if (e.key >= '0' && e.key <= '9') pressPinDigit(e.key);
+        else if (e.key === 'Backspace') backspacePinDigit();
+        else if (e.key === 'Escape') clearPinInput();
+      }
+    });
+
+    // --- 12:00 AM ROLLOVER LOGIC ---
+    // If a row is marked ✅ -> pulls next task from that row's upcoming list!
+    // If a row is marked ❌ (or left unmarked) -> keeps the same task for the next day!
+    function performMidnightRollover() {
+      appState.rows.forEach(function(row) {
+        if (!Array.isArray(row.upcoming)) row.upcoming = [];
+        if (row.status === 'done') {
+          if (row.upcoming.length > 0) {
+            row.task = row.upcoming.shift();
+          } else {
+            row.task = '';
+          }
+          row.status = 'pending';
+        } else {
+          // ❌ or unmarked: same task continues on the next day
+          row.status = 'pending';
+        }
+      });
+      appState.lastActiveDate = getTodayDateString();
+      saveState();
+      renderRows();
+      if (activeUpcomingRowId) renderUpcomingModalList();
+    }
+
+    function simulateMidnightRollover() {
+      if (appState.rows.length === 0) {
+        showToast('Press + to add a task row first.', 'info');
+        return;
+      }
+      performMidnightRollover();
+      showToast('12:00 AM update applied!', 'success');
+    }
+
+    function checkMidnightAutoRollover() {
+      var todayStr = getTodayDateString();
+      if (appState.lastActiveDate && appState.lastActiveDate !== todayStr) {
+        performMidnightRollover();
+      }
+    }
+
+    // --- TASK ROWS & '+' CONTROLS ---
+    function addNewTaskRow() {
+      var defaultStart = '09:00';
+      var defaultEnd = '10:00';
+      if (appState.rows.length > 0) {
+        var lastRow = appState.rows[appState.rows.length - 1];
+        if (lastRow.endTime) {
+          defaultStart = lastRow.endTime;
+          var parts = defaultStart.split(':');
+          var nextHour = (parseInt(parts[0], 10) + 1) % 24;
+          defaultEnd = String(nextHour).padStart(2, '0') + ':' + parts[1];
+        }
+      }
+
+      var newRow = {
+        id: 'row_' + Date.now() + '_' + Math.floor(Math.random() * 1000),
+        startTime: defaultStart,
+        endTime: defaultEnd,
+        task: '',
+        status: 'pending',
+        upcoming: []
+      };
+
+      appState.rows.push(newRow);
+      saveState();
+      renderRows();
+
+      // Focus the newly added task input
+      setTimeout(function() {
+        var input = document.getElementById('taskInput_' + newRow.id);
+        if (input) input.focus();
+      }, 40);
+    }
+
+    function updateRowField(rowId, field, value) {
+      for (var i = 0; i < appState.rows.length; i++) {
+        if (appState.rows[i].id === rowId) {
+          appState.rows[i][field] = value;
+          break;
+        }
+      }
+      saveState();
+    }
+
+    function toggleRowStatus(rowId, clickedStatus) {
+      for (var i = 0; i < appState.rows.length; i++) {
+        if (appState.rows[i].id === rowId) {
+          if (appState.rows[i].status === clickedStatus) {
+            appState.rows[i].status = 'pending';
+          } else {
+            appState.rows[i].status = clickedStatus;
+          }
+          break;
+        }
+      }
+      saveState();
+      renderRows();
+    }
+
+    function deleteTaskRow(rowId) {
+      appState.rows = appState.rows.filter(function(r) { return r.id !== rowId; });
+      saveState();
+      renderRows();
+    }
+
+    function renderRows() {
+      updateSyncBadge();
+      var container = document.getElementById('rowsContainer');
+      container.innerHTML = '';
+
+      appState.rows.forEach(function(row) {
+        if (!Array.isArray(row.upcoming)) row.upcoming = [];
+
+        var borderClass = 'border-slate-800 bg-slate-900/85';
+        if (row.status === 'done') borderClass = 'border-emerald-500/50 bg-emerald-950/20';
+        if (row.status === 'failed') borderClass = 'border-rose-500/50 bg-rose-950/20';
+
+        var doneBtnClass = row.status === 'done'
+          ? 'bg-emerald-500 text-slate-950 border-emerald-400 shadow-lg shadow-emerald-500/30 scale-105'
+          : 'bg-slate-800/90 text-slate-400 border-slate-700 hover:border-emerald-500/50';
+
+        var failedBtnClass = row.status === 'failed'
+          ? 'bg-rose-500 text-white border-rose-400 shadow-lg shadow-rose-500/30 scale-105'
+          : 'bg-slate-800/90 text-slate-400 border-slate-700 hover:border-rose-500/50';
+
+        var upcomingCount = row.upcoming.length;
+        var countBadgeHtml = upcomingCount > 0
+          ? '<span class="absolute -top-1.5 -right-1.5 min-w-[18px] h-[18px] px-1 rounded-full bg-indigo-500 text-[10px] font-bold text-white flex items-center justify-center shadow">' + upcomingCount + '</span>'
+          : '';
+
+        var wrapper = document.createElement('div');
+        wrapper.className = 'flex items-center gap-2.5 sm:gap-3 w-full';
+
+        wrapper.innerHTML =
+          '<!-- Main Task Row Card -->' +
+          '<div class="flex-1 rounded-2xl border p-3 sm:p-4 transition-all ' + borderClass + '">' +
+            '<div class="flex flex-col sm:flex-row sm:items-center gap-3">' +
+
+              '<!-- Start Time & End Time -->' +
+              '<div class="flex items-center gap-1.5 shrink-0">' +
+                '<input ' +
+                  'type="time" ' +
+                  'value="' + escapeHtml(row.startTime) + '" ' +
+                  'onchange="updateRowField(\'' + row.id + '\', \'startTime\', this.value)" ' +
+                  'aria-label="Start Time" ' +
+                  'class="px-2.5 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono font-semibold text-indigo-300 focus:outline-none focus:border-indigo-500"' +
+                '/>' +
+                '<span class="text-slate-500 font-bold">–</span>' +
+                '<input ' +
+                  'type="time" ' +
+                  'value="' + escapeHtml(row.endTime) + '" ' +
+                  'onchange="updateRowField(\'' + row.id + '\', \'endTime\', this.value)" ' +
+                  'aria-label="End Time" ' +
+                  'class="px-2.5 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono font-semibold text-indigo-300 focus:outline-none focus:border-indigo-500"' +
+                '/>' +
+              '</div>' +
+
+              '<!-- Today\'s Task Input -->' +
+              '<div class="flex-1 min-w-0">' +
+                '<input ' +
+                  'id="taskInput_' + row.id + '" ' +
+                  'type="text" ' +
+                  'value="' + escapeHtml(row.task) + '" ' +
+                  'placeholder="Enter task..." ' +
+                  'oninput="updateRowField(\'' + row.id + '\', \'task\', this.value)" ' +
+                  'class="w-full px-3.5 py-2 rounded-xl bg-slate-950/90 border border-slate-800 text-sm font-semibold text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 ' + (row.status === 'done' ? 'line-through text-emerald-200' : '') + '"' +
+                '/>' +
+              '</div>' +
+
+              '<!-- Status Box (✅ / ❌) & Row Delete -->' +
+              '<div class="flex items-center justify-between sm:justify-end gap-2 shrink-0">' +
+                '<div class="inline-flex items-center gap-1.5 p-1 rounded-2xl bg-slate-950 border border-slate-800">' +
+                  '<button ' +
+                    'type="button" ' +
+                    'onclick="toggleRowStatus(\'' + row.id + '\', \'done\')" ' +
+                    'class="status-btn w-10 h-9 rounded-xl border text-sm flex items-center justify-center ' + doneBtnClass + '" ' +
+                    'title="Mark ✅">' +
+                    '✅' +
+                  '</button>' +
+                  '<button ' +
+                    'type="button" ' +
+                    'onclick="toggleRowStatus(\'' + row.id + '\', \'failed\')" ' +
+                    'class="status-btn w-10 h-9 rounded-xl border text-sm flex items-center justify-center ' + failedBtnClass + '" ' +
+                    'title="Mark ❌">' +
+                    '❌' +
+                  '</button>' +
+                '</div>' +
+                '<button ' +
+                  'type="button" ' +
+                  'onclick="deleteTaskRow(\'' + row.id + '\')" ' +
+                  'class="w-8 h-8 rounded-xl text-slate-500 hover:text-rose-400 hover:bg-slate-800/80 flex items-center justify-center text-xs transition" ' +
+                  'title="Remove row">' +
+                  '✕' +
+                '</button>' +
+              '</div>' +
+
+            '</div>' +
+          '</div>' +
+
+          '<!-- Right-Side \'+\' Icon (Opens Upcoming Tasks List for this Timing) -->' +
+          '<button ' +
+            'type="button" ' +
+            'onclick="openUpcomingModal(\'' + row.id + '\')" ' +
+            'class="plus-btn relative w-12 h-12 sm:w-13 sm:h-13 rounded-2xl bg-slate-800/90 hover:bg-indigo-600 text-indigo-300 hover:text-white border border-slate-700 hover:border-indigo-400 flex items-center justify-center text-2xl font-light shrink-0 shadow-lg" ' +
+            'title="Upcoming tasks for this timing">' +
+            '+' +
+            countBadgeHtml +
+          '</button>';
+
+        container.appendChild(wrapper);
+      });
+    }
+
+    // --- RIGHT-SIDE '+' UPCOMING TASKS LIST FOR TIMING ---
+    function openUpcomingModal(rowId) {
+      activeUpcomingRowId = rowId;
+      var row = appState.rows.find(function(r) { return r.id === rowId; });
+      if (!row) return;
+
+      var sub = document.getElementById('upcomingModalSubtitle');
+      sub.textContent = formatTime12h(row.startTime) + ' – ' + formatTime12h(row.endTime);
+
+      document.getElementById('newUpcomingInput').value = '';
+      renderUpcomingModalList();
+      document.getElementById('upcomingModal').classList.remove('hidden');
+      setTimeout(function() {
+        document.getElementById('newUpcomingInput').focus();
+      }, 40);
+    }
+
+    function closeUpcomingModal() {
+      activeUpcomingRowId = null;
+      document.getElementById('upcomingModal').classList.add('hidden');
+      renderRows();
+    }
+
+    function handleAddUpcomingForRow(e) {
+      e.preventDefault();
+      if (!activeUpcomingRowId) return;
+      var input = document.getElementById('newUpcomingInput');
+      var text = input.value.trim();
+      if (!text) return;
+
+      var row = appState.rows.find(function(r) { return r.id === activeUpcomingRowId; });
+      if (!row) return;
+      if (!Array.isArray(row.upcoming)) row.upcoming = [];
+      row.upcoming.push(text);
+
+      input.value = '';
+      saveState();
+      renderUpcomingModalList();
+      renderRows();
+    }
+
+    function removeUpcomingFromRow(idx) {
+      var row = appState.rows.find(function(r) { return r.id === activeUpcomingRowId; });
+      if (!row || !Array.isArray(row.upcoming)) return;
+      row.upcoming.splice(idx, 1);
+      saveState();
+      renderUpcomingModalList();
+      renderRows();
+    }
+
+    function moveUpcomingInRow(idx, dir) {
+      var row = appState.rows.find(function(r) { return r.id === activeUpcomingRowId; });
+      if (!row || !Array.isArray(row.upcoming)) return;
+      var target = idx + dir;
+      if (target < 0 || target >= row.upcoming.length) return;
+      var temp = row.upcoming[idx];
+      row.upcoming[idx] = row.upcoming[target];
+      row.upcoming[target] = temp;
+      saveState();
+      renderUpcomingModalList();
+    }
+
+    function renderUpcomingModalList() {
+      var listEl = document.getElementById('upcomingModalList');
+      listEl.innerHTML = '';
+      var row = appState.rows.find(function(r) { return r.id === activeUpcomingRowId; });
+      if (!row) return;
+      if (!Array.isArray(row.upcoming)) row.upcoming = [];
+
+      if (row.upcoming.length === 0) {
+        listEl.innerHTML =
+          '<div class="rounded-2xl border border-dashed border-slate-800 p-6 text-center text-xs text-slate-400">' +
+            'No upcoming tasks stored for this timing yet.' +
+          '</div>';
+        return;
+      }
+
+      row.upcoming.forEach(function(itemText, idx) {
+        var item = document.createElement('div');
+        item.className = 'flex items-center justify-between gap-2 p-3 rounded-2xl bg-slate-900/90 border border-slate-800';
+        item.innerHTML =
+          '<div class="flex items-center gap-2.5 min-w-0">' +
+            '<span class="w-6 h-6 rounded-lg bg-indigo-500/20 border border-indigo-500/30 text-indigo-300 text-xs font-bold flex items-center justify-center shrink-0">' +
+              (idx + 1) +
+            '</span>' +
+            '<span class="text-sm font-medium text-white truncate">' + escapeHtml(itemText) + '</span>' +
+          '</div>' +
+          '<div class="flex items-center gap-1 shrink-0">' +
+            '<button type="button" onclick="moveUpcomingInRow(' + idx + ', -1)" ' + (idx === 0 ? 'disabled' : '') + ' class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 disabled:opacity-30 text-slate-300 text-xs">↑</button>' +
+            '<button type="button" onclick="moveUpcomingInRow(' + idx + ', 1)" ' + (idx === row.upcoming.length - 1 ? 'disabled' : '') + ' class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 disabled:opacity-30 text-slate-300 text-xs">↓</button>' +
+            '<button type="button" onclick="removeUpcomingFromRow(' + idx + ')" class="p-1.5 rounded-lg bg-slate-800 hover:bg-rose-500/20 text-slate-400 hover:text-rose-300 text-xs">✕</button>' +
+          '</div>';
+        listEl.appendChild(item);
+      });
+    }
+
+    // --- PIN MODAL ---
+    function openPinModal() {
+      document.getElementById('currentPinInput').value = '';
+      document.getElementById('newPinInput').value = '';
+      document.getElementById('pinModal').classList.remove('hidden');
+    }
+
+    function closePinModal() {
+      document.getElementById('pinModal').classList.add('hidden');
+    }
+
+    function handleSaveNewPin(e) {
+      e.preventDefault();
+      var curr = document.getElementById('currentPinInput').value.trim();
+      var next = document.getElementById('newPinInput').value.trim();
+      if (curr !== String(appState.pin || '1234')) {
+        showToast('Current PIN is incorrect.', 'error');
+        return;
+      }
+      if (!/^\d{4}$/.test(next)) {
+        showToast('New PIN must be 4 digits.', 'error');
+        return;
+      }
+      appState.pin = next;
+      appState.pinChanged = true;
+      saveState();
+      closePinModal();
+      showToast('PIN updated!', 'success');
+    }
+
+    // --- CLOUD SYNC ---
+    function openSyncModal() {
+      document.getElementById('cloudSyncUrlInput').value = cloudSyncUrl || '';
+      document.getElementById('syncModal').classList.remove('hidden');
+    }
+
+    function closeSyncModal() {
+      document.getElementById('syncModal').classList.add('hidden');
+    }
+
+    function updateSyncBadge() {
+      var dot = document.getElementById('syncDot');
+      var text = document.getElementById('syncStatusText');
+      if (!dot || !text) return;
+      if (cloudSyncUrl) {
+        dot.className = 'w-2 h-2 rounded-full bg-emerald-400';
+        text.textContent = 'Synced';
+      } else {
+        dot.className = 'w-2 h-2 rounded-full bg-amber-400';
+        text.textContent = 'Sync';
+      }
+    }
+
+    function saveCloudSyncConfig(e) {
+      e.preventDefault();
+      var url = document.getElementById('cloudSyncUrlInput').value.trim();
+      if (!url) return;
+      saveCloudSyncUrlToStorage(url);
+      pushStateToCloud(true);
+      startCloudPolling();
+      closeSyncModal();
+    }
+
+    function disconnectCloudSync() {
+      saveCloudSyncUrlToStorage('');
+      if (syncPollTimer) {
+        clearInterval(syncPollTimer);
+        syncPollTimer = null;
+      }
+      closeSyncModal();
+      showToast('Sync disconnected.', 'info');
+    }
+
+    function pushStateToCloud(verbose) {
+      if (!cloudSyncUrl) return;
+      fetch(cloudSyncUrl, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(appState)
+      })
+        .then(function(res) {
+          if (!res.ok) throw new Error();
+          if (verbose) showToast('Synced!', 'success');
+        })
+        .catch(function() {
+          if (verbose) showToast('Sync failed. Check URL.', 'error');
+        });
+    }
+
+    function pullFromCloudNow(silent) {
+      if (!cloudSyncUrl) return;
+      fetch(cloudSyncUrl)
+        .then(function(res) {
+          if (!res.ok) throw new Error();
+          return res.json();
+        })
+        .then(function(remote) {
+          if (remote && Array.isArray(remote.rows)) {
+            if (!silent || (remote.updatedAt && remote.updatedAt > (appState.updatedAt || 0))) {
+              appState = remote;
+              saveState(true);
+              checkMidnightAutoRollover();
+              renderRows();
+              if (!silent) showToast('Pulled latest data!', 'success');
+            }
+          } else if (!silent) {
+            pushStateToCloud(true);
+          }
+        })
+        .catch(function() {
+          if (!silent) showToast('Failed to pull from URL.', 'error');
+        });
+    }
+
+    function pushToCloudNow() {
+      var inputUrl = document.getElementById('cloudSyncUrlInput').value.trim();
+      if (inputUrl) saveCloudSyncUrlToStorage(inputUrl);
+      pushStateToCloud(true);
+    }
+
+    function startCloudPolling() {
+      if (syncPollTimer) clearInterval(syncPollTimer);
+      if (!cloudSyncUrl) return;
+      syncPollTimer = setInterval(function() {
+        pullFromCloudNow(true);
+      }, 6000);
+    }
+
+    function copySyncSnapshot() {
+      var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(appState))));
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(encoded).then(function() {
+          showToast('Code copied!', 'success');
+        }).catch(function() {
+          fallbackCopy(encoded);
+        });
+      } else {
+        fallbackCopy(encoded);
+      }
+    }
+
+    function fallbackCopy(text) {
+      var input = document.getElementById('importSnapshotInput');
+      if (input) {
+        input.value = text;
+        input.select();
+        try {
+          document.execCommand('copy');
+          showToast('Code copied!', 'success');
+        } catch (e) {}
+      }
+    }
+
+    function importSyncSnapshot() {
+      var raw = document.getElementById('importSnapshotInput').value.trim();
+      if (!raw) return;
+      try {
+        var decoded = decodeURIComponent(escape(atob(raw)));
+        var parsed = JSON.parse(decoded);
+        if (parsed && Array.isArray(parsed.rows)) {
+          appState = parsed;
+          saveState();
+          renderRows();
+          document.getElementById('importSnapshotInput').value = '';
+          closeSyncModal();
+          showToast('Data loaded!', 'success');
+        }
+      } catch (e) {
+        showToast('Invalid code.', 'error');
+      }
+    }
+
+    // --- INIT ---
+    window.onload = function() {
+      updatePinDots();
+      setInterval(function() {
+        var todayStr = getTodayDateString();
+        if (appState.lastActiveDate !== todayStr) {
+          checkMidnightAutoRollover();
+        }
+      }, 1000);
+      if (cloudSyncUrl) {
+        pullFromCloudNow(true);
+        startCloudPolling();
+      }
+    };
+  </script>
+
+<script async="" src="./Do It Today (DIT)_files/hud" data-nf-variant="public" data-netlify-site-id="4dea0d6e-1721-42ad-9364-aeea1f2f942d" data-app-host="app.netlify.com" data-account-tier="free"></script>
+<iframe id="nl-badge-frame" title="Powered by Netlify" style="position: fixed; bottom: 0px; right: 0px; border: 0px; margin: 0px; padding: 0px; background: transparent; color-scheme: dark; z-index: 2147483645; width: 197px; height: 64px; clip-path: path(&quot;M 3 3 H 184 V 51 H 3 Z&quot;);" data-nl-ready="1" src="./Do It Today (DIT)_files/saved_resource.html"></iframe></body></html>
